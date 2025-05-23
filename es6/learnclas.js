@@ -42,9 +42,7 @@
 
 class PersonClass{
     constructor(fname , lname , age){
-        this.fname = fname 
-        this.lname = lname
-        this.age = age
+       Object.assign(this , {fname , lname , age})
     }
     getName(){
         console.log("Name :" ,  this.fname  , this.lname);
